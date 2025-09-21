@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess Game</title>
+    <link rel="stylesheet" href="guess.css">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chela+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="stars" id="stars-container">G</div>
+   <h1></h1>
+    <div class="difficulty">
+            <h3> Choose Difficulty First</h3>
+                 <button class="normal" data-level="normal">Normal</button>
+                <button class="hard" data-level="hard">Hard</button>
+            </div>
+    <div class="guess-game">
+        <div class="game-area">
+            <div class="inputs"></div>
+            <div class="control">
+                <button class="chack">Check the word</button>
+                <button class="hint"><span></span> Hints</button>
+                <button class="rest">Rest</button>
+            </div>
+        </div>
+        <div class="game-colors">
+            <h2>Key Colors</h2>
+            <div class="key-color">
+                <div class="key in-place"></div>
+                <div class="key-text">letter is right and in place </div>
+            </div>
+            <div class="key-color">
+                <div class="key not-place"></div>
+                <div class="key-text">letter is right but not in place </div>
+            </div>
+            <div class="key-color">
+                <div class="key no"></div>
+                <div class="key-text">letter is wrong</div>
+            </div>
+            <div class="massege"></div>
+        </div>
+    </div>
+        <footer>Guess the word game created by MohamedAlbably
+            <span><a href="https://github.com/MohamedAlbably" target="_blank" class="link"><i class="fa-brands fa-github"></i></a></span>
+        </footer>
+        <script src="guess.js"></script>
+</body>
+</html>
