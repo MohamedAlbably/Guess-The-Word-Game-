@@ -146,9 +146,9 @@ function handleguess() {
         const aletter = wordToGuess[i - 1];
 
         if (letter === aletter) {
-            inputField.classList.add("yes-in-place");
-        } else if (wordToGuess.includes(letter) && letter !== "") {
             inputField.classList.add("not-place");
+        } else if (wordToGuess.includes(letter) && letter !== "") {
+            inputField.classList.add("yes-in-place");
             success = false;
         } else {
             inputField.classList.add("no");
@@ -242,3 +242,4 @@ document.querySelectorAll(".difficulty button").forEach(btn => {
 
 
 // End of the game logic
+
