@@ -170,11 +170,11 @@ h1{text-align: center;
                 margin-right: 10px;
                 &.in-place
                 {
-                    background-color: #f89e13;
+                    background-color: #18ba89;
                 }
                 &.not-place
                 {
-                    background-color: #18ba89;
+                    background-color: #f89e13;
                 }
                 &.no
                 {
@@ -477,4 +477,5 @@ h2
         margin-top: 13px;
     }
 }
+
 
