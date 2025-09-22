@@ -212,13 +212,14 @@ p
 }
 
 footer{
-    position: fixed ;
+    position: relative;
     text-align: center;
     padding: 10px;
     background-color:#333;
-    bottom: 0;
+    bottom: -300px;
     left: 0;
-    width: 100%;
+    top: 50%;
+    width: 109%;
     font-size: 14px;
     color:white;
     font-family: Arial, Helvetica, sans-serif;
@@ -379,9 +380,9 @@ h2
         margin: 0 3px;
     }
     .control {
-        padding: 10px 15px;
+        padding: 10px 50px;
         font-size: 16px;
-        flex-direction: column;
+        flex-direction: row;
     }
 
     h1 {
@@ -420,13 +421,13 @@ h2
     }
 }
 
-        @media (max-width: 480px) {
+       /* @media (max-width: 480px) {
             h1 {
                 font-size: 30px;
             }
             .game-area input {
                 width: 40px;
-                height: 40px;
+                height: 50px;
                 font-size: 40px;
             }
             .massege {
@@ -435,5 +436,40 @@ h2
             .massege span {
                 font-size: 36px;
             }
+        }*/
 
-        }
+        @media (max-width: 480px) {
+    .game-area .inputs input {
+        width: 35px;
+        height: 35px;
+        font-size: 25px;
+        margin: 0 2px;
+    }
+
+    .control {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .control .chack,
+    .control .hint,
+    .control .rest {
+        width: 100%;
+        padding: 8px 0;
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 24px;
+        padding: 10px;
+    }
+
+    p {
+        font-size: 24px;
+    }
+
+    .game-colors .key-color {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
