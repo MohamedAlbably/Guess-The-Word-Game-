@@ -454,7 +454,7 @@ h2
     .control .chack,
     .control .hint,
     .control .rest {
-        width: 100%;
+        width: 50%;
         padding: 8px 0;
         font-size: 14px;
     }
@@ -473,3 +473,4 @@ h2
         align-items: flex-start;
     }
 }
+
